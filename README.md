@@ -73,6 +73,7 @@ Providers offering free tiers to access models via API — no local hardware req
 - [Poe (Quora)](https://poe.com/) — Free tier with daily credits for GPT-4 mini, Claude instant, and community bots.
 - [CatGPT](https://www.catgpt.cc/) — Completely free chat with multiple models, no login required.
 - [Qwen Chat (Alibaba)](https://chat.qwen.ai/) — Free access to Qwen 3.6-Plus, Qwen 3.6-Max, and other Qwen models via web chat and API. 1M token context for agentic coding.
+- [Ollama Cloud](https://ollama.com/cloud) — Free tier for running open-source models on Ollama's cloud infrastructure. Light usage included, 1 concurrent model. Same `ollama run` command as local. Zero data retention.
 
 ---
 
