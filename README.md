@@ -4,7 +4,7 @@
 
 ![Last Updated](https://img.shields.io/badge/Last%20Checked-June%206%2C%202026-brightgreen?style=for-the-badge)
 ![Models](https://img.shields.io/badge/Models-22-blue?style=flat-square)
-![Tools](https://img.shields.io/badge/Tools-50%2B-blue?style=flat-square)
+![Tools](https://img.shields.io/badge/Tools-150-blue?style=flat-square)
 ![Sections](https://img.shields.io/badge/Sections-15-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-CC0-lightgrey?style=flat-square)
 
