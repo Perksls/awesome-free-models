@@ -2,6 +2,8 @@
 
 > A curated list of free AI models, APIs, and tools you can use without paying a cent.
 
+![Last Updated](https://img.shields.io/badge/Last%20Checked-June%206%2C%202026-brightgreen?style=for-the-badge)
+
 Running AI shouldn't require a credit card. This list curates genuinely free models — open-weight models you can self-host, free API tiers from major providers, and tools to run everything locally.
 
 
@@ -136,7 +138,7 @@ Free, open-source frameworks for building AI agents and multi-agent systems.
 - [Dify](https://dify.ai/) - LLM app development platform with visual workflow builder and agent capabilities. [GitHub](https://github.com/langgenius/dify)
 - [Flowise](https://flowiseai.com/) - Low-code visual LLM flow builder with drag-and-drop interface. [GitHub](https://github.com/FlowiseAI/Flowise)
 - [TaskWeaver (Microsoft)](https://microsoft.github.io/TaskWeaver/) - Code-first agent framework for planning and executing complex tasks. [GitHub](https://github.com/microsoft/TaskWeaver)
-- [Fazm](https://github.com/fazm-ai/fazm) - **Apr 2026.** Open-source local computer-use agent for macOS. Drives apps via accessibility APIs, model-agnostic, faster than screenshot-based agents.
+- [Fazm](https://github.com/mediar-ai/fazm) - **Apr 2026.** Open-source local computer-use agent for macOS. Drives apps via accessibility APIs, model-agnostic, faster than screenshot-based agents.
 
 ## Fine-tuning Tools
 
