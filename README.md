@@ -3,7 +3,7 @@
 > A curated list of free AI models, APIs, and tools you can use without paying a cent.
 
 ![Last Updated](https://img.shields.io/badge/Last%20Checked-June%206%2C%202026-brightgreen?style=for-the-badge)
-![Models](https://img.shields.io/badge/Models-19-blue?style=flat-square)
+![Models](https://img.shields.io/badge/Models-18-blue?style=flat-square)
 ![Tools](https://img.shields.io/badge/Tools-50%2B-blue?style=flat-square)
 ![Sections](https://img.shields.io/badge/Sections-15-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-CC0-lightgrey?style=flat-square)
@@ -41,7 +41,6 @@ Running AI shouldn't require a credit card. This list curates genuinely free mod
 Open-weight models released since March 2026 that you can download and run on your own hardware.
 
 - [Llama 4 Scout / Maverick](https://huggingface.co/meta-llama) — Meta's latest MoE generation. Scout: 109B, 10M context. Maverick: 402B, 1M context. Native multimodal. [[License]](https://github.com/facebookresearch/llama/blob/main/LICENSE)
-- [Qwen 3.6-Plus](https://huggingface.co/Qwen) — Agentic coding model with 1M token context. Apache 2.0.
 - [DeepSeek V4](https://huggingface.co/deepseek-ai) — Latest generation with extreme cost-efficiency. MIT license.
 - [Gemma 4 31B / 26B MoE / E4B / E2B](https://huggingface.co/google) — Fully permissive Apache 2.0. 256K context, native multimodal. New standard for open-weight.
 - [GLM-5.1 (Zhipu AI)](https://huggingface.co/THUDM) — 744B MoE model, competitive with top proprietary models. MIT license.
@@ -73,6 +72,7 @@ Providers offering free tiers to access models via API — no local hardware req
 - [Replicate](https://replicate.com/) — Free tier with limited credits for running open-source models.
 - [Poe (Quora)](https://poe.com/) — Free tier with daily credits for GPT-4 mini, Claude instant, and community bots.
 - [CatGPT](https://www.catgpt.cc/) — Completely free chat with multiple models, no login required.
+- [Qwen Chat (Alibaba)](https://chat.qwen.ai/) — Free access to Qwen 3.6-Plus, Qwen 3.6-Max, and other Qwen models via web chat and API. 1M token context for agentic coding.
 
 ---
 
