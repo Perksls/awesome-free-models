@@ -4,27 +4,16 @@
 
 Running AI shouldn't require a credit card. This list curates genuinely free models — open-weight models you can self-host, free API tiers from major providers, and tools to run everything locally.
 
+> **Updated June 2026.** Entries older than 3 months are pruned to keep the list current.
+
 ## Contents
 
-- [Recent Releases (Apr–Jun 2026)](#recent-releases-aprjun-2026)
 - [Open-Weight Models](#open-weight-models)
-  - [Llama Family (Meta)](#llama-family-meta)
-  - [Qwen Family (Alibaba)](#qwen-family-alibaba)
-  - [Mistral Family](#mistral-family)
-  - [DeepSeek Family](#deepseek-family)
-  - [Gemma Family (Google)](#gemma-family-google)
-  - [Phi Family (Microsoft)](#phi-family-microsoft)
-  - [Other Notable Models](#other-notable-models)
 - [Free API Providers](#free-api-providers)
 - [Local Inference Tools](#local-inference-tools)
 - [AI Chatbot UIs](#ai-chatbot-uis)
 - [AI Coding Assistants](#ai-coding-assistants)
-- [Multimodal & Vision Models](#multimodal--vision-models)
 - [Code Models](#code-models)
-- [Image Generation Models](#image-generation-models)
-- [Video Generation Models](#video-generation-models)
-- [Audio & Speech Models](#audio--speech-models)
-- [Embedding Models](#embedding-models)
 - [RAG & Vector Databases](#rag--vector-databases)
 - [Agentic Frameworks](#agentic-frameworks)
 - [Fine-tuning Tools](#fine-tuning-tools)
@@ -35,125 +24,17 @@ Running AI shouldn't require a credit card. This list curates genuinely free mod
 - [Resources & Leaderboards](#resources--leaderboards)
 - [Communities](#communities)
 
-## Recent Releases (Apr–Jun 2026)
-
-> 🔥 The newest additions to this list — models and tools released or with major updates in the last 2 months.
-
-- [Gemma 4 (Google)](https://huggingface.co/google) - **April 2026.** Google's latest open-weight family with fully permissive Apache 2.0 license. Includes 31B dense, 26B MoE variants, and E4B/E2B edge models. 256K context, native multimodal.
-- [DeepSeek V4](https://huggingface.co/deepseek-ai) - **April 2026.** Latest generation with extreme cost-efficiency. MIT license.
-- [Qwen 3.6-Plus (Alibaba)](https://huggingface.co/Qwen) - **April 2026.** Agentic coding variant with 1M token context window. Apache 2.0.
-- [Llama 4 Scout / Maverick (Meta)](https://huggingface.co/meta-llama) - **April 2026.** Scout: 109B MoE with 10M context. Maverick: 402B MoE with 1M context. Native multimodal.
-- [GLM-5.1 (Zhipu AI)](https://huggingface.co/THUDM) - **May 2026.** 744B MoE model, competitive with top proprietary models. MIT license.
-- [MiniMax M3](https://huggingface.co/Minimax) - **June 2026.** Frontier-tier open-weight model. 1M context, native multimodal + computer use. MiniMax Sparse Attention architecture.
-- [Trinity (Arcee AI)](https://huggingface.co/arcee-ai) - **May 2026.** 400B parameter open-weight model for enterprises. Apache 2.0.
-- [MAI-Code-1-Flash (Microsoft)](https://huggingface.co/microsoft) - **June 2026.** Microsoft's inaugural open-weight coding model for lowering infrastructure costs.
-- [Fazm](https://github.com/fazm-ai/fazm) - **April 2026.** Open-source local computer-use agent for macOS. Drives apps via accessibility APIs, model-agnostic.
-- [Cursor 3](https://www.cursor.com/) - **Apr 2026.** Major update to AI-native code editor with deeper model integration and agentic features.
-- [Windsurf (Codeium)](https://codeium.com/windsurf) - **New (2026).** AI-native IDE with deep contextual understanding, free tier for individuals.
-
 ## Open-Weight Models
 
-Models you can download and run on your own hardware. Most use permissive licenses (Apache 2.0, MIT, or custom open-weight licenses).
+Open-weight models released since March 2026 that you can download and run on your own hardware.
 
-### Llama Family (Meta)
-
-The industry standard for open-weight models. Optimized for local hardware with extensive quantization support.
-
-- [Llama 4](https://huggingface.co/meta-llama) - Latest generation with Mixture-of-Experts architecture. Multiple sizes: Scout (109B, 1 active), Maverick (402B, 17 active). [[License]](https://github.com/facebookresearch/llama/blob/main/LICENSE)
-- [Llama 3.3 70B](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) - Top-tier instruct model, rivals GPT-4 on many benchmarks.
-- [Llama 3.1 8B / 70B / 405B](https://huggingface.co/meta-llama) - Widely adopted, massive ecosystem of fine-tunes and tools.
-- [Llama 3.2 1B / 3B / 11B / 90B](https://huggingface.co/meta-llama) - Includes small edge-friendly models (1B, 3B) and multimodal vision models (11B, 90B).
-
-**License:** Custom open-weight license — permissive for most use cases, restrictions on large-scale commercial services (>700M MAU).
-
-### Qwen Family (Alibaba)
-
-Top-tier performers across language, code, and vision tasks. Released under Apache 2.0.
-
-- [Qwen 3.6-Plus](https://huggingface.co/Qwen) - **NEW (Apr 2026).** Agentic coding model with 1M token context window. Apache 2.0.
-- [Qwen3 0.6B / 1.7B / 7B / 14B / 32B / 110B / 235B](https://huggingface.co/Qwen) - Excellent reasoning, multilingual support. Apache 2.0.
-- [Qwen3-Coder](https://huggingface.co/Qwen/Qwen3-Coder-14B) - Code-specialized variant, state-of-the-art for open-weight coding.
-- [Qwen3-VL](https://huggingface.co/Qwen/Qwen3-VL-7B) - Vision-language model, strong on document and image understanding.
-- [Qwen2.5 7B / 32B / 72B](https://huggingface.co/Qwen) - Mature ecosystem, tons of community fine-tunes and tools.
-- [Qwen2.5-Coder 1.5B / 7B / 32B](https://huggingface.co/Qwen) - Code-specialized, rivals GPT-4 on coding benchmarks.
-- [Qwen2.5-VL 3B / 7B / 72B](https://huggingface.co/Qwen) - Vision-language model.
-
-**License:** Apache 2.0 — fully permissive for commercial use.
-
-### Mistral Family
-
-Known for high-quality, efficient models that run well on consumer hardware.
-
-- [Mistral Large](https://huggingface.co/mistralai) - Mistral's most capable open-weight model.
-- [Mistral Small 3.1 24B](https://huggingface.co/mistralai) - High performance in a compact 24B package. Apache 2.0.
-- [Mistral Small 3 24B](https://huggingface.co/mistralai) - Outperforms Llama 3.3 70B on several benchmarks at 1/3 the size.
-- [Mistral 7B](https://huggingface.co/mistralai) - Classic 7B model, huge community ecosystem.
-- [Mixtral 8x7B / 8x22B](https://huggingface.co/mistralai) - Mixture-of-Experts models offering high capability per compute.
-- [Codestral](https://huggingface.co/mistralai) - Code-specialized models with permissive license.
-
-**License:** Apache 2.0 (Small 3, Codestral), Mistral Research License, or Mistral Commercial License. Check each model's page.
-
-### DeepSeek Family
-
-Exceptional reasoning and coding performance. Known for efficiency innovations.
-
-- [DeepSeek V4](https://huggingface.co/deepseek-ai) - **NEW (Apr 2026).** Latest generation with extreme cost-efficiency. MIT license.
-- [DeepSeek V3](https://huggingface.co/deepseek-ai/DeepSeek-V3) - Large MoE model rivaling top closed-source models.
-- [DeepSeek R1](https://huggingface.co/deepseek-ai/DeepSeek-R1) - Reasoning-focused model with chain-of-thought capabilities.
-- [DeepSeek Coder V2 / V3](https://huggingface.co/deepseek-ai) - State-of-the-art code generation and completion.
-
-**License:** MIT (most models) — fully permissive for commercial use.
-
-### Gemma Family (Google)
-
-Google's open-weight line. Excellent efficiency and quality.
-
-- [Gemma 4 31B / 26B MoE / E4B / E2B](https://huggingface.co/google) - **NEW (Apr 2026).** Fully permissive Apache 2.0 license. 256K context, native multimodal. New standard for open-weight.
-- [Gemma 3 1B / 4B / 12B / 27B](https://huggingface.co/google) - Strong multilingual and reasoning performance.
-- [Gemma 2 2B / 9B / 27B](https://huggingface.co/google) - Widely adopted, punch above their weight class.
-- [CodeGemma 2B / 7B](https://huggingface.co/google) - Code-specialized variants.
-- [RecurrentGemma 2B / 9B](https://huggingface.co/google) - Recurrent architecture variant, efficient for long sequences.
-- [EmbeddingGemma 300M](https://huggingface.co/google) - Lightweight embedding model for RAG.
-
-**License:** Apache 2.0 (Gemma 4), custom open-weight (Gemma 2/3).
-
-### Phi Family (Microsoft)
-
-Small models that punch far above their weight. Perfect for edge deployment and fast local inference.
-
-- [Phi-4 14B](https://huggingface.co/microsoft/phi-4) - Microsoft's latest, rivals models 2-3x its size.
-- [Phi-3 Mini (3.8B) / Small (7B) / Medium (14B)](https://huggingface.co/microsoft) - Run on phones and laptops.
-- [Phi-3 Vision (4.2B)](https://huggingface.co/microsoft) - Small multimodal model.
-- [Phi-3.5 MoE (4x3.8B)](https://huggingface.co/microsoft) - Mixture-of-Experts variant.
-
-**License:** MIT (Phi-3 family), custom (Phi-4) — check each model.
-
-### Other Notable Models
-
-- [GLM-5.1 (Zhipu AI)](https://huggingface.co/THUDM) - **NEW (May 2026).** 744B MoE model, competitive with top proprietary models. MIT license.
-- [MiniMax M3](https://huggingface.co/Minimax) - **NEW (Jun 2026).** Frontier-tier 1M context, native multimodal + computer use. MSA architecture.
-- [Trinity (Arcee AI)](https://huggingface.co/arcee-ai) - **NEW (May 2026).** 400B parameter enterprise model. Apache 2.0.
-- [GLM-4 / GLM-4V (Zhipu AI)](https://huggingface.co/THUDM) - Strong multilingual model, MIT license.
-- [Falcon 2 / 3 (TII)](https://huggingface.co/tiiuae) - Apache 2.0, available in multiple sizes.
-- [Yi 1.5 / Yi 1.5-Chat (01.AI)](https://huggingface.co/01-ai) - Strong bilingual (Chinese/English) models.
-- [Dbrx (Databricks)](https://huggingface.co/databricks) - MoE model, permissive license.
-- [Kimi K2 (Moonshot AI)](https://huggingface.co/moonshotai) - Recent strong performer in reasoning tasks.
-- [Solar Pro / Mini (Upstage)](https://huggingface.co/upstage) - Strong LLM with permissive license.
-- [Command R / R+ (Cohere)](https://huggingface.co/CohereForAI) - Optimized for RAG, CC-BY-NC (free for non-commercial).
-- [Hermes 3 (Nous Research)](https://huggingface.co/NousResearch) - Top-performing fine-tunes with strong instruction following. Apache 2.0.
-- [OLMo 2 (AI2)](https://huggingface.co/allenai) - Fully open model — weights, training data, and code all released. Apache 2.0.
-- [Nemotron / Nemo (NVIDIA)](https://huggingface.co/nvidia) - NVIDIA's open models, competitive with leading alternatives.
-- [Aya 23 / Aya Expanse (Cohere)](https://huggingface.co/CohereForAI) - Multilingual models covering 23+ languages. Apache 2.0.
-- [InternLM / InternLM2 (Shanghai AI Lab)](https://huggingface.co/internlm) - Strong general-purpose models with long context. Apache 2.0.
-- [MiniCPM / MiniCPM-MoE (OpenBMB)](https://huggingface.co/openbmb) - Compact models with strong performance for their size. Apache 2.0.
-- [BLOOM / BLOOMZ (BigScience)](https://huggingface.co/bigscience) - 176B multilingual model. Open RAIL-M license.
-- [T5 / Flan-T5 (Google)](https://huggingface.co/google) - Text-to-text transformer, excellent for fine-tuning. Apache 2.0.
-- [Mamba / Mamba-2 (State Space Models)](https://huggingface.co/state-spaces) - Alternative to Transformer architecture, linear-time inference. Apache 2.0.
-- [RWKV (Eagle)](https://huggingface.co/RWKV) - RNN-Transformer hybrid, efficient for long sequences. Apache 2.0.
-- [SmolLM (Hugging Face)](https://huggingface.co/HuggingFaceTB) - Tiny models (135M / 360M / 1.7B) for edge and mobile. Apache 2.0.
-- [Zephyr (Hugging Face)](https://huggingface.co/HuggingFaceH4) - Fine-tuned Mistral/Starling variants with strong instruction following. MIT.
-- [OpenChat (Community)](https://huggingface.co/openchat) - Open-source chat models using C-RLFT. Apache 2.0.
-- [Starling (UC Berkeley)](https://huggingface.co/berkeley-nest) - RLHF-tuned models trained with preference data. CC-BY-NC.
+- [Llama 4 Scout / Maverick](https://huggingface.co/meta-llama) - Meta's latest MoE generation. Scout: 109B, 10M context. Maverick: 402B, 1M context. Native multimodal. [[License]](https://github.com/facebookresearch/llama/blob/main/LICENSE)
+- [Qwen 3.6-Plus](https://huggingface.co/Qwen) - Agentic coding model with 1M token context. Apache 2.0.
+- [DeepSeek V4](https://huggingface.co/deepseek-ai) - Latest generation with extreme cost-efficiency. MIT license.
+- [Gemma 4 31B / 26B MoE / E4B / E2B](https://huggingface.co/google) - Fully permissive Apache 2.0. 256K context, native multimodal. New standard for open-weight.
+- [GLM-5.1 (Zhipu AI)](https://huggingface.co/THUDM) - 744B MoE model, competitive with top proprietary models. MIT license.
+- [MiniMax M3](https://huggingface.co/Minimax) - Frontier-tier 1M context, native multimodal + computer use. MSA architecture.
+- [Trinity (Arcee AI)](https://huggingface.co/arcee-ai) - 400B parameter enterprise model. Apache 2.0.
 
 ## Free API Providers
 
@@ -218,104 +99,13 @@ Free tools that integrate AI into your development workflow.
 - [Llama Coder (Nutlope)](https://llamacoder.together.ai/) - Free AI code generation tool. Generate entire apps from prompts.
 - [Bolt.new (StackBlitz)](https://bolt.new/) - Free tier for AI-powered full-stack web app development in browser.
 - [Claude Code (Anthropic)](https://docs.anthropic.com/en/docs/claude-code/overview) - Free tier with limited usage for terminal-based AI coding assistant.
-
-## Multimodal & Vision Models
-
-Free models that understand images, video, and documents.
-
-- [Qwen3-VL 7B / 72B](https://huggingface.co/Qwen) - State-of-the-art open vision-language model. Document understanding, image captioning, visual Q&A.
-- [Qwen2.5-VL 3B / 7B / 72B](https://huggingface.co/Qwen) - Mature vision-language model with strong multilingual OCR.
-- [InternVL2 1B / 4B / 8B / 26B / 76B](https://huggingface.co/OpenGVLab) - Top-tier open-source VLM, competitive with GPT-4V on many benchmarks.
-- [MiniCPM-V-2.6 (OpenBMB)](https://huggingface.co/openbmb) - Strong small VLM running on mobile devices. Apache 2.0.
-- [Llama 3.2 Vision 11B / 90B](https://huggingface.co/meta-llama) - Meta's vision-language models integrated with Llama ecosystem.
-- [Pixtral 12B (Mistral)](https://huggingface.co/mistralai) - Mistral's multimodal model with strong document understanding.
-- [LLaVA-NeXT (Microsoft)](https://huggingface.co/llava-hf) - Popular vision-language assistant with strong image reasoning. Apache 2.0.
-- [CogVLM2 (Zhipu AI)](https://huggingface.co/THUDM) - Vision-language model with high-resolution image understanding.
-- [GLM-4V-9B (Zhipu AI)](https://huggingface.co/THUDM/glm-4v-9b) - Vision-language model, MIT license.
-- [Florence-2 (Microsoft)](https://huggingface.co/microsoft/Florence-2-large) - Lightweight vision model for captioning, detection, segmentation.
-- [PaliGemma (Google)](https://huggingface.co/google/paligemma) - Vision-language model built on Gemma.
-- [SigLIP (Google)](https://huggingface.co/google/siglip-so-vit-patch16-256) - Vision encoder for multimodal applications.
-- [ImageBind (Meta)](https://github.com/facebookresearch/ImageBind) - Embeds images, text, audio, depth, temperature, IMU data jointly.
-- [Video-LLaMA (DAMO Academy)](https://github.com/DAMO-NLP-SG/Video-LLaMA) - Video-language understanding model.
+- [Cursor 3](https://www.cursor.com/) - **Apr 2026.** AI-native code editor with deep model integration and agentic features. Free tier available.
 
 ## Code Models
 
 Specialized for code generation, completion, and analysis.
 
-- [Qwen3-Coder 14B](https://huggingface.co/Qwen/Qwen3-Coder-14B) - State-of-the-art open-weight code model. Apache 2.0.
-- [Qwen2.5-Coder 1.5B / 7B / 32B](https://huggingface.co/Qwen) - Excellent multi-language code generation.
-- [DeepSeek-Coder V2 / V3](https://huggingface.co/deepseek-ai) - Rivals GPT-4 on coding benchmarks. MIT license.
-- [Codestral (Mistral)](https://huggingface.co/mistralai) - Mistral's code model with permissive license.
-- [CodeGemma 2B / 7B (Google)](https://huggingface.co/google) - Lightweight code models for completion and generation.
-- [MAI-Code-1-Flash (Microsoft)](https://huggingface.co/microsoft) - **NEW (Jun 2026).** Microsoft's open-weight coding model for lowering infrastructure costs.
-- [Code Llama 7B / 13B / 34B / 70B (Meta)](https://huggingface.co/meta-llama) - Meta's code-specialized Llama variants.
-- [StarCoder2 3B / 7B / 15B](https://huggingface.co/bigcode) - Trained on The Stack v2 (619 programming languages). Apache 2.0.
-- [Stable Code 3B](https://huggingface.co/stabilityai) - Compact code model for fill-in-the-middle tasks.
-- [CodeGeeX4 (Zhipu AI)](https://huggingface.co/THUDM) - Multilingual code generation model. Apache 2.0.
-
-## Image Generation Models
-
-Free, open models for generating images.
-
-- [Stable Diffusion 3.5 / 3 (Stability AI)](https://huggingface.co/stabilityai) - Latest SD generation, improved prompt adherence and typography.
-- [Stable Diffusion XL (SDXL)](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) - Mature, widely adopted with thousands of fine-tunes and LoRAs.
-- [FLUX.1 (Black Forest Labs)](https://huggingface.co/black-forest-labs) - State-of-the-art open image generation. Variants: dev (non-commercial), schnell (Apache 2.0).
-- [Playground v3 (Playground AI)](https://huggingface.co/playgroundai) - High-quality image generation with strong prompt understanding.
-- [PixArt-Σ / PixArt-α (Huawei)](https://huggingface.co/PixArt-alpha) - Efficient text-to-image transformer. Competitive with SDXL quality.
-- [Wuerstchen (Stability AI)](https://huggingface.co/warp-ai) - Efficient text-to-image model with 42x compression.
-- [Kandinsky 3 (Sber AI)](https://huggingface.co/ai-forever) - Multilingual text-to-image model with good quality.
-- [DeepFloyd IF (Stability AI)](https://huggingface.co/DeepFloyd) - Text-to-image model with exceptional text rendering.
-- [LCM-LoRA (Latent Consistency Models)](https://huggingface.co/latent-consistency) - Real-time image generation in 1-4 steps.
-
-**Where to run:** Locally via [ComfyUI](https://github.com/comfyanonymous/ComfyUI), [Automatic1111 WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), [InvokeAI](https://github.com/invoke-ai/InvokeAI), or for free on [Hugging Face Spaces](https://huggingface.co/spaces).
-
-## Video Generation Models
-
-Free, open models for generating video from text or images.
-
-- [Wan 2.1 (Alibaba)](https://huggingface.co/Wan-AI) - State-of-the-art open video generation. High-quality text-to-video and image-to-video. Apache 2.0.
-- [Mochi 1 (Genmo)](https://huggingface.co/genmo) - Open-source video generation with high motion and long duration clips.
-- [LTX-Video (Lightricks)](https://huggingface.co/Lightricks) - Fast video generation model, runs in real-time on consumer GPUs. Apache 2.0.
-- [CogVideo / CogVideoX (Zhipu AI)](https://huggingface.co/THUDM) - Large-scale video generation with text and image conditioning. Apache 2.0.
-- [AnimateDiff (Stability AI)](https://github.com/guoyww/AnimateDiff) - Animate existing image generation models (SDXL, SD1.5) to create videos.
-- [Stable Video Diffusion (Stability AI)](https://huggingface.co/stabilityai) - Image-to-video generation with state-of-the-art quality.
-
-**Where to run:** Locally via [ComfyUI](https://github.com/comfyanonymous/ComfyUI) or for free on [Hugging Face Spaces](https://huggingface.co/spaces).
-
-## Audio & Speech Models
-
-Free models for speech-to-text, text-to-speech, music generation, and more.
-
-- [Whisper (OpenAI)](https://github.com/openai/whisper) - State-of-the-art speech-to-text. Multiple sizes (tiny to large). MIT.
-- [Whisper.cpp](https://github.com/ggerganov/whisper.cpp) - High-performance port of Whisper. Runs on CPU.
-- [Bark (Suno)](https://github.com/suno-ai/bark) - Text-to-audio generation (speech, music, sound effects). MIT.
-- [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) - Fast, lightweight TTS model. 82MB, runs on CPU.
-- [F5-TTS (Shanghai AI Lab)](https://github.com/SWivid/F5-TTS) - Flow-matching TTS with zero-shot voice cloning. Apache 2.0.
-- [Fish Speech](https://github.com/fishaudio/fish-speech) - Multilingual TTS with voice cloning. Apache 2.0.
-- [XTTS-v2 (Coqui)](https://github.com/coqui-ai/TTS) - Cross-lingual TTS with voice cloning. CPML.
-- [ChatTTS](https://github.com/2noise/ChatTTS) - Conversational TTS optimized for dialogue. CC-BY-NC.
-- [StyleTTS 2](https://github.com/yl4579/StyleTTS2) - High-quality TTS with style control. MIT.
-- [Coqui TTS](https://github.com/coqui-ai/TTS) - Deep learning TTS. 1100+ languages.
-- [SeamlessM4T (Meta)](https://github.com/facebookresearch/seamless_communication) - Multimodal translation: speech-to-speech, speech-to-text, text-to-speech. CC-BY-NC 4.0.
-- [MMS (Meta)](https://github.com/facebookresearch/mms) - Massively Multilingual Speech. 1100+ languages. CC-BY-NC 4.0.
-- [MusicGen (Meta)](https://github.com/facebookresearch/audiocraft) - Music generation from text descriptions. CC-BY-NC 4.0.
-- [Stable Audio Open (Stability AI)](https://huggingface.co/stabilityai/stable-audio-open-1.0) - Generate audio from text prompts. Apache 2.0.
-
-## Embedding Models
-
-Free models for semantic search, RAG, and text similarity.
-
-- [BGE-M3 (BAAI)](https://huggingface.co/BAAI/bge-m3) - Top-tier multilingual embedding. Supports dense and sparse retrieval. Apache 2.0.
-- [BGE-Large / Small / Base (BAAI)](https://huggingface.co/BAAI) - Family of embedding models for different performance/speed tradeoffs. Apache 2.0.
-- [E5-Mistral 7B (intfloat)](https://huggingface.co/intfloat/e5-mistral-7b-instruct) - LLM-based embedding with state-of-the-art performance. MIT.
-- [E5-Small / Base / Large (intfloat)](https://huggingface.co/intfloat) - Efficient embedding models. MIT.
-- [gte-large / gte-small (Alibaba)](https://huggingface.co/Alibaba-NLP) - Strong general-purpose embeddings. Apache 2.0.
-- [EmbeddingGemma 300M (Google)](https://huggingface.co/google/embedding-gemma-300M) - Lightweight, fast embedding for Edge devices.
-- [Qwen-Embedding 8B](https://huggingface.co/Qwen) - High-performance embedding for RAG pipelines.
-- [jina-embeddings-v3 (Jina AI)](https://huggingface.co/jinaai/jina-embeddings-v3) - Multi-task embedding model. Apache 2.0.
-- [Nomic Embed Text V1 (Nomic AI)](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5) - Long-context embedding (8192 tokens). Apache 2.0.
-- [instructor-xl (HKUNLP)](https://huggingface.co/hkunlp/instructor-xl) - Task-adaptable embeddings for retrieval and classification. Apache 2.0.
-- [Sentence Transformers (SBERT)](https://www.sbert.net/) - Library and model hub for computing sentence embeddings. Pre-trained models for 100+ languages.
+- [MAI-Code-1-Flash (Microsoft)](https://huggingface.co/microsoft) - **Jun 2026.** Microsoft's open-weight coding model for lowering infrastructure costs.
 
 ## RAG & Vector Databases
 
@@ -347,7 +137,7 @@ Free, open-source frameworks for building AI agents and multi-agent systems.
 - [Dify](https://dify.ai/) - LLM app development platform with visual workflow builder and agent capabilities. [GitHub](https://github.com/langgenius/dify)
 - [Flowise](https://flowiseai.com/) - Low-code visual LLM flow builder with drag-and-drop interface. [GitHub](https://github.com/FlowiseAI/Flowise)
 - [TaskWeaver (Microsoft)](https://microsoft.github.io/TaskWeaver/) - Code-first agent framework for planning and executing complex tasks. [GitHub](https://github.com/microsoft/TaskWeaver)
-- [Fazm](https://github.com/fazm-ai/fazm) - **NEW (Apr 2026).** Open-source local computer-use agent for macOS. Drives apps via accessibility APIs, model-agnostic, faster than screenshot-based agents.
+- [Fazm](https://github.com/fazm-ai/fazm) - **Apr 2026.** Open-source local computer-use agent for macOS. Drives apps via accessibility APIs, model-agnostic, faster than screenshot-based agents.
 
 ## Fine-tuning Tools
 
@@ -387,7 +177,7 @@ Free, open datasets for training, fine-tuning, and evaluating models.
 - [UltraChat (Sean C.)](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k) - 200k multi-turn conversations synthesized by ChatGPT.
 - [No Robots (Hugging Face)](https://huggingface.co/datasets/HuggingFaceH4/no_robots) - 10k high-quality human-written instructions. Apache 2.0.
 - [RLAIF-V (OpenBMB)](https://huggingface.co/datasets/openbmb/RLAIF-V) - AI-generated preference data for RLHF. Apache 2.0.
-- [MMLU / GSM8K](https://huggingface.co/datasets) - Standard benchmarks for evaluation. Available on Hugging Face Datasets.
+- [MMLU / GSM8K](https://huggingface.co/datasets) - Standard benchmarks for evaluation.
 
 ## Model Hosting Platforms
 
@@ -427,10 +217,6 @@ Free courses, books, and tutorials for learning AI and LLMs.
 - [Ollama Library](https://ollama.com/library) - Browse models available for one-command local setup.
 - [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) - Community-maintained list of free LLM API resources.
 - [SweetTea](https://www.sweettea.ai/) - Community voting on model quality and preference.
-- [Natural Language Processing (NLP) Progress](https://nlpprogress.com/) - Tracking progress in NLP across tasks and benchmarks.
-- [EvalPlus (Code)](https://evalplus.github.io/) - Rigorous evaluation framework for code generation models.
-- [Hugging Face Open ASR Leaderboard](https://huggingface.co/spaces/open-asr-leaderboard/leaderboard) - Benchmarks for speech recognition models.
-- [Hugging Face Text-to-Image Leaderboard](https://huggingface.co/spaces/text-to-image-leaderboard/leaderboard) - Rankings for image generation models.
 
 ## Communities
 
@@ -440,7 +226,6 @@ Free courses, books, and tutorials for learning AI and LLMs.
 - [LM Studio Discord](https://discord.gg/lmstudio) - LM Studio community.
 - [Hugging Face Forums](https://discuss.huggingface.co/) - Discussions on models, datasets, and Spaces.
 - [r/MachineLearning](https://reddit.com/r/MachineLearning) - General ML/AI research and news.
-- [LinkedIn AI Community](https://www.linkedin.com/groups/14249523/) - Professional AI discussions and networking.
 - [Discord: AI Agents](https://discord.gg/ai-agents) - Community for AI agent development and agentic frameworks.
 
 ## License
