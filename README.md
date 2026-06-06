@@ -4,7 +4,7 @@
 
 ![Last Updated](https://img.shields.io/badge/Last%20Checked-June%206%2C%202026-brightgreen?style=for-the-badge)
 
-> ✅ All links verified live on June 6, 2026. [Broken links found and fixed: 5](#) during this check.
+> ✅ All links verified live on June 6, 2026. 5 broken links found and fixed during this check.
 
 Running AI shouldn't require a credit card. This list curates genuinely free models — open-weight models you can self-host, free API tiers from major providers, and tools to run everything locally.
 
@@ -51,7 +51,6 @@ Providers offering free tiers to access models via API — no local hardware req
 - [DeepInfra](https://deepinfra.com/) - Serverless inference. Free tier with daily rate limits for popular open-source models.
 - [Together AI](https://www.together.ai/) - Free trial credits for new users. Fast inference on open-source models.
 - [Fireworks AI](https://fireworks.ai/) - Free tier for community models. Optimized for low latency.
-- [Perplexity](https://www.perplexity.ai/) - Free AI search and assistant with access to Sonar models. Formerly labs.perplexity.ai.
 - [SiliconFlow](https://siliconflow.cn/) - Rising platform with free access to many open-source models.
 - [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) - Free tier for running select open-source models at the edge.
 - [Replicate](https://replicate.com/) - Free tier with limited credits for running open-source models.
@@ -212,6 +211,7 @@ Free courses, books, and tutorials for learning AI and LLMs.
 
 ## Resources & Leaderboards
 
+- [Perplexity](https://www.perplexity.ai/) - Free AI search and research assistant with real-time answers and source citations.
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard) - The primary benchmark for open-weight models. Updated regularly.
 - [LMSYS Chatbot Arena](https://lmarena.ai/) - Human preference rankings of models. Best source for real-world quality comparisons.
 - [Artificial Analysis](https://artificialanalysis.ai/) - Independent benchmarks for speed, pricing, and quality across providers.
