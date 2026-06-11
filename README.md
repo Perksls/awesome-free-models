@@ -156,6 +156,7 @@ Free, open-source web interfaces for chatting with AI models — self-host or us
 | [Lobe Chat](https://lobehub.com/) | Modern, extensible chat framework with plugin system and multi-provider support. [GitHub](https://github.com/lobehub/lobe-chat) |
 | [Chatbot UI](https://www.chatbotui.com/) | Simple, clean ChatGPT interface. Easy to self-host with any OpenAI-compatible API. [GitHub](https://github.com/mckaywrigley/chatbot-ui) |
 | [NextChat (ChatGPT-Next-Web)](https://github.com/ChatGPTNextWeb/NextChat) | Lightweight cross-platform chat app. Self-host on Vercel or download official desktop/mobile clients. |
+| [InesAI](https://github.com/Perksls/InesAI) | Lightweiht chat-app, configurable Multi-provider to any OpenAI-compatible API with automatic inline fallback (if provider fails or hits rate limits) |
 
 ---
 
